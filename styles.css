@@ -1,0 +1,160 @@
+body {
+  background-color: black;
+  font-family: "Ubuntu";
+}
+
+section {
+  width: 100%;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Ubuntu Mono";
+  margin-bottom: 10px;
+}
+
+.entry {
+  margin-bottom: 10px;
+}
+
+.entry .header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.entry .header .title {
+  font-weight: bold;
+}
+
+.entry .header .location {
+  margin-left: 5px;
+}
+
+.entry .header .time {
+  flex-grow: 1;
+  text-align: right;
+  font-style: italic;
+}
+
+.entry .subsection {
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+
+.entry .subsection .title {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 15px;
+}
+
+
+.entry * > *:not(.header) {
+  margin-left: 5px;
+}
+
+
+.entry ul.info {
+  font-size: 14px;
+  list-style-type: none;
+  padding-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.entry ul.info > li {
+  text-indent: -6px;
+}
+
+.entry ul.info > li::before {
+  content: "- ";
+  text-indent: -5px;
+}
+
+#paper {
+  width: 800px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  height: 1600px;
+
+
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+#header .name {
+  font-size: 50px;
+}
+
+#contact_info {
+  font-family: "Ubuntu Mono";
+  font-size: 19px;
+}
+
+#contact_info tr td:first-child {
+  font-weight: bold;
+  text-align: left;
+  padding-right: 10px;
+}
+
+#contact_info a {
+  text-decoration: none;
+  color: #0000ee;
+}
+
+/* #education .school {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+#education .school div {
+  margin-right: 7.5px;
+}
+
+#education .year {
+  font-style: italic;
+}
+
+#education .awards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#education .awards > * {
+  margin-right: 5px;
+} */
+
+#education .gpa::before {
+  content: "GPA: ";
+  font-weight: 400;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.i {
+  font-style: italic;
+}
+
+
+@media print {
+  body {
+    width: fit-content;
+    background-color: white;
+  }/
+}
