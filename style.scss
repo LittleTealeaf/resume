@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  font-family: "Ubuntu";
+}
+
+section {
+  width: 100%;
+}
+
+#paper {
+  width: 800px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  height: 1600px;
+}
+
+
+@media print {
+  body {
+    width: fit-content;
+    background-color: white;
+  }
+}
